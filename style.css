@@ -1,0 +1,707 @@
+/*
+Theme Name: Vonicka 
+Theme URI: http://vonickascloset.com/
+Author: Sam Olendi 
+Author URI: http://samanthaolendi.com/
+Description: Vonicka is a custom theme built for Vonicka's Closet
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vonicka
+*/
+
+
+/*============================
+        general
+  ===========================*/
+
+body {
+    font-family: 'Adobe Garamond Pro', 'Georgia', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: #2fafa9;
+    border: 0;
+    text-decoration: none;
+
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #168E88;
+    border-bottom: 1px dotted #168E88;
+}
+
+
+/*============================
+        header
+  ===========================*/
+
+.header {
+    border-bottom: 1px solid #0b0b0b;
+    text-align: center;
+}
+
+
+/*
+blacktop
+*/
+
+.header-blacktop {
+    background-color: #040806;
+    overflow: auto;
+    padding: 10px 50px 7px;
+    text-align: center;
+}
+
+@media screen and (min-width: 33.313em) {
+    .header-blacktop {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 60.375em) {
+    .header-blacktop {
+        padding: 10px 100px 7px;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .header-blacktop {
+        padding: 10px 200px 7px;
+    }
+}
+
+.header-blacktop-sharing {
+    float: none;
+}
+
+@media screen and (min-width: 33.313em) {
+    .header-blacktop-sharing {
+        float: left;
+    }
+}
+
+.header-blacktop-sharing-link {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.header-blacktop-sharing-link:hover {
+    border: 0;
+}
+
+.header-blacktop-search {
+    position: relative;
+    float: none;
+}
+
+@media screen and (min-width: 33.313em) {
+    .header-blacktop-search {
+        float: right;
+    }
+}
+
+.header-blacktop-search-bar {
+    border: 0;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    color: #ffffff;
+    padding: 3px 20px 3px 5px;
+}
+
+.header-blacktop-search-bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.85em;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.header-blacktop-search-bar::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+.header-blacktop-search-bar:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+.header-blacktop-search-bar:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+
+.header-blacktop-search-icon {
+    color: #ffffff;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.header-blacktop-search-icon:hover {
+    border: 0;
+    color: #2fafa9;
+}
+
+/*
+logo
+*/
+
+.header-logo {
+    border-bottom: 1px solid #040806;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.header-logo-link {
+    color: #040806;
+    font-family: 'Playfair Display', 'Adobe Garamond Pro', 'Georgia', serif;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 64em) {
+    .header-logo-link {
+        font-size: 3em;
+    }
+}
+
+.header-logo-link:hover {
+    border: 0;
+}
+
+
+/*
+navigation
+*/
+
+.header-navigation {
+    margin: 0;
+    padding: 15px 0;
+}
+
+.header-navigation li {
+    border-right: 1px solid #040806;
+    display: inline-block;
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 40em) {
+    .header-navigation li {
+        font-size: 0.9em;
+    }
+}
+
+.header-navigation li:last-child {
+    border: 0;
+}
+
+.header-navigation a {
+    color: #040806;
+}
+
+.header-navigation a:hover {
+    color: #168E88;
+}
+
+
+/*============================
+        content
+  ===========================*/
+
+.content {
+    border-right: none;
+    float: none;
+    width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+    .content {
+        border-right: 1px solid #0b0b0b;
+        float: left;
+        width: calc( 100% * 0.65 );
+    }
+}
+
+@media screen and (min-width: 60.375em) {
+    .content {
+        width: calc( 100% * 0.7 );
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .content {
+        width: calc( 100% * 0.75 );
+    }
+}
+
+.content-empty {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+/*============================
+        feed
+  ===========================*/
+
+.content-feed {
+    border-bottom: 1px solid rgba(11, 11, 11, 0.2);
+    margin: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+@media screen and (min-width: 60.375em) {
+    .content-feed {
+        margin: 50px 100px;
+    }
+}
+
+.content-feed-category {
+    background-color: #2fafa9;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 0.7em;
+    font-style: italic;
+    margin: 0;
+    padding: 8px 10px 5px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 43.125em) {
+    .content-feed-category {
+        font-size: 0.8em;
+    }
+}
+
+.content-feed-category a {
+    color: #ffffff;
+}
+
+.content-feed-title {
+    font-size: 1.6em;
+    line-height: 1.3;
+    margin: 10px auto 5px;
+    width: 80%;
+}
+
+@media screen and (min-width: 23.438em) {
+    .content-feed-title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 43.125em) {
+    .content-feed-title {
+        font-size: 2.5em;
+    }
+}
+
+.content-feed-title a {
+    color: #040806;
+}
+
+.content-feed-excerpt {
+    font-style: italic;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 15px auto 20px;
+    width: 100%;
+}
+
+@media screen and (min-width: 23.438em) {
+    .content-feed-excerpt {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 43.125em) {
+    .content-feed-excerpt {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .content-feed-excerpt {
+        font-size: 1.15em;
+        width: 50%;
+    }
+}
+
+.content-feed-image {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/*============================
+        sidebar
+  ===========================*/
+
+.sidebar {
+    display: none;
+    float: left;
+    padding: 20px;
+    width: calc( 100% * 0.35 );
+}
+
+@media screen and (min-width: 40em) {
+    .sidebar {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 43.125em) {
+    .sidebar {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (min-width: 60.375em) {
+    .sidebar {
+        width: calc( 100% * 0.3 );
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .sidebar {
+        width: calc( 100% * 0.25 );
+    }
+}
+
+.sidebar>div {
+    margin-bottom: 40px;
+}
+
+.sidebar-title {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: 'Adobe Garamond Pro', 'Georgia', sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0 0 15px;
+    padding: 8px 10px 5px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 43.125em) {
+    .sidebar-title {
+        font-size: 0.9em;
+    }
+}
+
+.sidebar .screen-reader-text {
+    display: none;
+}
+
+.sidebar input {
+    border: 1px solid rgba(11, 11, 11, 0.2);
+    padding: 5px;
+    width: 100%;
+}
+
+.sidebar #searchsubmit {
+    background-color: #2fafa9;
+    border: 0;
+    color: #ffffff;
+    font-style: italic;
+    margin-top: 6px;
+    padding: 9px 0 6px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.sidebar li {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 7px;
+}
+
+@media screen and (min-width: 43.125em) {
+    .sidebar li {
+        font-size: 1em;
+    }
+}
+
+.sidebar li a {
+    color: #040806;
+    border-bottom: 1px dotted rgba(11, 11, 11, 0.8);
+}
+
+.sidebar li a:hover {
+    color: #2fafa9;
+}
+
+.sidebar .textwidget {
+    font-style: italic;
+}
+
+
+/*============================
+        story
+  ===========================*/
+
+.story {
+    margin: 50px 20px 120px;
+}
+
+@media screen and (min-width: 24em) {
+    .story {
+        margin: 50px 50px 120px;
+    }
+}
+
+@media screen and (min-width: 40em) {
+    .story {
+        margin: 50px 100px 120px;
+    }
+}
+
+@media screen and (min-width: 60.375em) {
+    .story {
+        margin: 50px 200px 120px;
+    }
+}
+
+.story-title {
+    font-size: 2em;
+    margin: 70px 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 30em) {
+    .story-title {
+        font-size: 2.8em;
+    }
+}
+
+.story img {
+    height: auto;
+    max-width: 100%;
+}
+
+.story h1, .story h2, .story h3,
+.story h4, .story h5, .story h6 {
+    text-align: center;
+}
+
+.story h1 {
+    font-size: 2.5em;
+}
+
+@media screen and (min-width: 30em) {
+    .story h1 {
+        font-size: 3em;
+    }
+}
+
+.story h2 {
+    font-size: 2.2em;
+}
+
+@media screen and (min-width: 30em) {
+    .story h2 {
+        font-size: 2.7em;
+    }
+}
+
+.story h3 {
+    font-size: 1.7em;
+}
+
+@media screen and (min-width: 30em) {
+    .story h3 {
+        font-size: 2.2em;
+    }
+}
+
+.story h4 {
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 30em) {
+    .story h4 {
+        font-size: 1.8em;
+    }
+}
+
+.story h5 {
+    font-size: 1.3em;
+}
+
+@media screen and (min-width: 30em) {
+    .story h5 {
+        font-size: 1.5em;
+    }
+}
+
+.story h6 {
+    font-size: 1.1em;
+}
+
+@media screen and (min-width: 30em) {
+    .story h6 {
+        font-size: 1.2em;
+    }
+}
+
+.story p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.story li {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.story blockquote {
+    display: inline-block;
+}
+
+.story blockquote p {
+    color: #555555;
+    display: inline;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.story table {
+    border: 1px solid rgba(11,11,11,0.3);
+    width: 100%;
+}
+
+.story tr {
+    border-bottom: 1px solid rgba(11,11,11,0.1);
+}
+
+.story th,
+.story td {
+    border-right: 1px solid rgba(11,11,11,0.1);
+    padding: 7px 0 3px 10px;
+}
+
+.story th {
+    font-style: italic;
+    text-align: left;
+}
+
+.story pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.story q {
+    font-style: italic;
+}
+
+.wp-caption-text {
+    color: #555555;
+    font-style: italic;
+}
+
+
+/*============================
+        footer
+  ===========================*/
+
+.footer {
+    background-color: #040806;
+    color: #aaaaaa;
+    clear: both;
+    overflow: auto;
+    padding: 15px 20px;
+}
+
+@media screen and (min-width: 24em) {
+    .footer {
+        padding: 15px 50px;
+    }
+}
+
+@media screen and (min-width: 40em) {
+    .footer {
+        padding: 15px 100px;
+    }
+}
+
+@media screen and (min-width: 60.375em) {
+    .footer {
+        padding: 15px 200px;
+    }
+}
+
+.footer-copyright {
+    float: none;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+@media screen and (min-width: 37.5em) {
+    .footer-copyright {
+        float: left;
+    }
+}
+
+.footer-makers {
+    float: none;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+@media screen and (min-width: 37.5em) {
+    .footer-copyright {
+        float: right;
+    }
+}
+
+.footer-makers-link {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/*============================
+        ajax load more
+  ===========================*/
+
+button.alm-load-more-btn {
+    border-radius: 0 !important;
+    color: #040806 !important;
+    font-family: 'Adobe Garamond Pro', 'Georgia', sans-serif !important;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.alm-load-more-btn.more {
+    background-color: #e7e7e7 !important;
+}
+
+
+
+.content-search-text {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.content-search-query {
+    border-bottom: 1px dotted #2fafa9;
+    color: #2fafa9;
+}
